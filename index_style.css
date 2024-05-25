@@ -5,7 +5,7 @@ html
         padding: 0px;
         margin: 0px;
         width: 100%;
-        height: 1750px;
+        height: 2000px;
     }
 
 body
@@ -27,7 +27,7 @@ main
         height: 100%;
     }
 
-h1
+h1, h2
     {
         text-align: center;
     }
@@ -45,7 +45,7 @@ dt
 
 /*Header Config*/
 
-header
+.hd_introduction
     {
         box-sizing: border-box;
         display: flex;
@@ -57,7 +57,7 @@ header
 
     }
 
-header figure
+.hd_figure
     {
         box-sizing: border-box;
         width: 17.75%;
@@ -109,7 +109,6 @@ nav ul li
 a
     {
         text-decoration: none;
-        color: rgb(255, 255, 255);
     }
 
 nav ul li:hover
@@ -135,20 +134,71 @@ section
         border-radius: 25px;
     }
 
-.div_main
+.articles
     {
+        margin: 0% 1%;
+        padding: 1% 0%;
         display: flex;
+        /*flex-wrap: wrap;*/
         flex-direction: row;
         justify-content: space-around;
-        align-self: center;
+        align-items: center;
+
+        box-sizing: border-box;
+        border-radius: 45px;
+        border: solid 5px rgb(140, 0, 0);
+        border-right-style: double;
+        border-left-style: double;
     }
 
-figure img
+.articles > article
     {
-        height: 275px;
-        width: 250px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(140, 140, 140, 0.5);
+        border-radius: 45px;
+
+            figure
+                {
+                    height: 90%;
+                    width: 90%;
+        
+
+                        img
+                            {
+                                border-radius: 45px;
+                                height: 100%;
+                                width: 100%;
+                            }
+
+                        figcaption
+                            {
+                                text-align: center;
+                            }
+                }
     }
 
+
+/*End*/
+
+/*Header Config*/
+
+header
+    {
+        text-align: center;
+    }
+
+header > figure 
+    {
+        img
+            {
+                width: 35%;
+                border-radius: 45px;
+            }
+    }
 
 /*End*/
 
