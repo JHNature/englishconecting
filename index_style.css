@@ -1,5 +1,11 @@
 /*General Config*/
 
+
+* 
+    {
+        box-sizing: border-box;
+    }
+    
 html
     {
         padding: 0px;
