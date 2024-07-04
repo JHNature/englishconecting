@@ -3,25 +3,18 @@
 * 
     {
         box-sizing: border-box;
-    }
-
-html
-    {
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        height: 2000px;
+        margin: 0;
+        padding: 0;
     }
 
 body
     {
-        box-sizing: border-box;
         background-color: rgb(0, 100, 255);
-        margin: inherit; /* 0px*/
-        padding: 0px;
-        height: inherit; /* 1750px */
-        width: inherit; /* 100% */
+        margin: inherit; 
+        height: inherit;
+        width: inherit;
         font-family: 'Times New Roman', Times, serif;
+        height: 100vh;
         
     }
 
@@ -29,12 +22,12 @@ main
     {
         margin: 1.5% 2%;
         padding: 2%;
-        height: 75vh;
+        height: 80vh;
         background-color: white;
         border-radius: 4%;
     }
 
-h1, h2
+h1, h2, h3
     {
         text-align: center;
     }
@@ -52,16 +45,15 @@ dt
 
 /*Header Config*/
 
-nav ul
+nav > ul
     {
-        box-sizing: border-box;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
 
-nav ul li 
+nav > ul li 
     {
         display: flex;
         flex-direction: row;
@@ -93,11 +85,14 @@ nav ul li:hover
     }
 /*End*/
 
-/*Section config*/
 
 
-
-/*End*/
+section
+    {
+        width: 50%;
+        
+    }
+    
 
 /*Header Config*/
 
@@ -115,17 +110,90 @@ article
     {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         align-items: flex-start;
         margin: 1%;
         border-style: double;
         border-color: darkred;
-        height: 50%;
+        height: 100%;
     }
 
-article > div 
+div 
     {
-        width: 25%;
-        border: darkblue solid ;
+        border: solid green;
     }
+
+footer
+    {
+        background-color: white;
+        height: 10vh;
+    }
+
+.content
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+.content2
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+            li
+                {
+                    width: 20%;
+                    border: red solid;
+                    border-radius: 20%; 
+                }
+    }
+
+li
+    {
+        list-style-type: none;
+        text-align: center;
+    }
+article > section:first-child
+    {
+        height: 100%;
+        background-color: blue;
+    }
+article > section:nth-child(2)
+    {
+        height: 100%;
+            
+            ul
+                {
+                    height: 20%;
+                }
+            div
+                {
+                    height: 75%;
+                } 
+    }
+
+.frac
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+            li
+                {
+                    display: flex;
+                    height: 75%;
+                    border: solid red;
+                    border-radius: 20%;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            li:hover
+                {
+                    background-color: yellow;
+
+    }
+
+    
